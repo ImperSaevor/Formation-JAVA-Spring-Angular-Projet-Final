@@ -1,0 +1,74 @@
+<div class="container page-moncompte">
+    <div class="row">
+        <div class="col-md-12 col-sm-12 col-12 header-moncompte">
+            <h1>Mon compte</h1>
+            <p>Cette page est privée et sécurisée, Alten Cinémas protège vos données</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 col-sm-12 col-12 infos-persos">
+            <h2>Mes informations personnelles</h2>
+
+            <form>
+                <label>Nom</label><br />
+                <hr />
+                <span class="donnees-client">{{client.nom}}</span>
+                <br>
+                <br>
+                <label>Prénom</label><br />
+                <hr />
+                <span class="donnees-client">{{client.prenom}}</span>
+                <br>
+                <br>
+                <label>Date de naissance</label><br />
+                <hr />
+                <span class="donnees-client">{{client.date}}</span>
+                <br>
+                <br>
+                <label>Mot de passe</label><br />
+                <hr />
+                <span class="donnees-client">{{client.password}}</span>
+                <br>
+                <br>
+                <label>Adresse mail</label><br />
+                <hr />
+                <span class="donnees-client">{{client.mail}}</span>
+                <br>
+                <br>
+                <label>Code postal</label><br />
+                <hr />
+                <span class="donnees-client">{{client.cp}}</span>
+                <br>
+                <br>
+                <label>Ma dernière commande</label><br />
+                <hr />
+                <span class="donnees-client">{{client.commande[client.commande.length - 1].commandeExtra}} {{client.commande[client.commande.length - 1].commandePlace}} {{client.commande[client.commande.length - 1].prixTotal}}</span>
+            </form>
+        </div>
+        <div class="col-md-6 col-sm-12 col-12 infos-persos-2">
+            <h2>Mes plus</h2>
+
+            <form>
+                <label>Ma(es) carte(s)</label><br />
+                <hr />
+                <span class="donnees-client"></span>
+
+                <label>Programme fidélité</label><br />
+                <hr />
+                <span class="donnees-client"></span>
+
+                <label>Mon cinéma préféré</label><br />
+                <hr />
+                <span class="donnees-client"></span>
+
+                <label>Ma dernière séance</label><br />
+                <hr />
+                <span class="donnees-client"></span>
+            </form>
+            <div>
+              <input class="btn btn-dark" type="button" value="Se deconnecter" (click)="disconnect()">
+            </div>
+        </div>
+    </div>
+</div>
+

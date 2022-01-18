@@ -1,0 +1,129 @@
+/Back/*target*
+/Back/*.jar
+/Back/*.war
+/Back/*.ear
+/Back/*.class
+
+# eclipse specific git ignore
+/Back/*.pydevproject
+/Back/.project
+/Back/.metadata
+/Back/bin/**
+/Back/tmp/**
+/Back/tmp/**/*
+/Back/*.tmp
+/Back/*.bak
+/Back/*.swp
+/Back/*~.nib
+/Back/local.properties
+/Back/.classpath
+/Back/.settings/
+/Back/.loadpath
+/Back/.vscode
+/Back/.RemoteSystemsTempFiles
+
+# eclipse specific git ignore
+*.pydevproject
+.project
+.metadata
+bin/**
+tmp/**
+tmp/**/*
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.classpath
+.settings/
+.loadpath
+.recommenders
+.RemoteSystemsTempFiles
+
+
+
+# External tool builders
+/Back/.externalToolBuilders/
+
+# Locally stored "Eclipse launch configurations"
+/Back/*.launch
+
+/Back/HELP.md
+/Back/target/
+/Back/!.mvn/wrapper/maven-wrapper.jar
+/Back/!**/src/main/**/target/
+/Back/!**/src/test/**/target/
+
+### STS ###
+/Back/.apt_generated
+/Back/.classpath
+/Back/.factorypath
+/Back/.project
+/Back/.settings
+/Back/.springBeans
+/Back/.sts4-cache
+
+### IntelliJ IDEA ###
+/Back/.idea
+/Back/*.iws
+/Back/*.iml
+/Back/*.ipr
+
+### NetBeans ###
+/Back/nbproject/private/
+/Back/nbbuild/
+/Back/dist/
+/Back/nbdist/
+/Back/.nb-gradle/
+/Back/build/
+/Back/!**/src/main/**/build/
+/Back/!**/src/test/**/build/
+
+### VS Code ###
+.vscode/
+
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# compiled output
+/Front/dist
+/Front/tmp
+/Front/out-tsc
+# Only exists if Bazel was run
+/Front/bazel-out
+
+# dependencies
+/Front/node_modules
+
+# profiling files
+chrome-profiler-events*.json
+
+# IDEs and editors
+/Front/.idea
+/Front.project
+/Front.classpath
+/Front.c9/
+/Front*.launch
+/Front.settings/
+/Front*.sublime-workspace
+
+# IDE - VSCode
+/Front.vscode/*
+/Front!.vscode/settings.json
+/Front!.vscode/tasks.json
+/Front!.vscode/launch.json
+/Front!.vscode/extensions.json
+/Front.history/*
+
+# misc
+/Front/.sass-cache
+/Front/connect.lock
+/Front/coverage
+/Front/libpeerconnection.log
+/Front/npm-debug.log
+/Front/yarn-error.log
+/Front/testem.log
+/Front/typings
+
+# System Files
+/Front/.DS_Store
+/Front/Thumbs.db

@@ -1,0 +1,125 @@
+
+.header-body {
+    background: url(/assets/images/fond-header.png) rgba(48,48,48,0.8);
+    background-position-x:center;
+    padding:1rem;
+}
+
+.logo {
+    width:10rem;
+    padding-left:2.6rem;
+}
+
+#menu {
+    margin-top:4rem;
+}
+
+#menu ul li {
+    display:inline;
+}
+
+#menu ul li a {
+    color:#fff;
+    text-transform:uppercase;
+    text-decoration:none;
+    font-family:arial;
+    padding:1rem;
+}
+
+#menu ul li a:hover {
+    background:#57bac8;
+    border-radius:1rem;
+    padding:1rem;
+}
+
+#compte {
+    float:right;
+    font-family:arial;
+    color:#fff;
+    font-size:1rem;
+    text-transform:uppercase;
+    position: relative;
+    top: 2.9rem;
+    right: 0rem;
+}
+
+#choixlangues {
+    position: relative;
+    display: block;
+    right: 6rem;
+    top: -7rem;
+    float: right;
+    background: #58bac7;
+    color: #fff;
+    padding: 0.5rem;
+    border-radius: 1rem;
+}
+
+#choixlangues > option:hover {
+    background:#fff;
+    color:#57bac8;
+}
+
+
+/* DIV BARRE DE RECHERCHE*/
+
+.div-recherche {
+    background: #58bac7;
+}
+
+.div-recherche .navbar {
+    padding-top:0.8rem;
+    padding-bottom:0.8rem;
+}
+
+.div-recherche .btn-outline-success {
+    color:#fff;
+    border-color:#fff;
+}
+
+.div-recherche .btn-outline-success:hover {
+    background-color: #fff;
+    color:#57bac8;
+}
+
+.div-recherche .container-fluid {
+    justify-content: center;
+}
+
+.div-recherche form {
+    width:40rem;
+}
+
+/* DIV BARRE DE RECHERCHE*/
+
+
+
+/* DIV PUB CLIQUABLE*/
+
+.div-pub {
+    padding:2rem;
+    background:url(/assets/images/fond-pub.png);
+    background-position-x: center;
+}
+
+.pub h2 {
+    color:#57bac8;
+}
+
+#btn-abonnement, #btn-decouvrir {
+    background:#57bac8;
+    color:#fff;
+    border-radius:1rem;
+    border:none;
+    padding:0.5rem;
+}
+
+#btn-decouvrir {
+    margin-left:1rem;
+}
+
+#btn-abonnement:hover, #btn-decouvrir:hover {
+    background:rgba(87,186,200,0.5);
+}
+
+/* DIV PUB CLIQUABLE*/

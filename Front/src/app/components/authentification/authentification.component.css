@@ -1,0 +1,39 @@
+.login-client {
+    margin-top:2rem;
+}
+
+.login-client #btn-connection, .login-client #btn-enregistrer {
+    background:rgba(48,48,48,0.8);
+}
+
+.login-client #btn-connection:hover, .login-client #btn-enregistrer:hover {
+    background:rgba(48,48,48,0.5);
+}
+
+.container-formulaire {
+    padding:1rem;
+    border-radius:1rem;
+    color:#fff;
+    margin-top:1rem;
+    border:0.5rem solid #fff;
+}
+
+.container-formulaire h2 {
+    font-size:1.2rem;
+    margin-bottom:2rem;
+    text-align:center;
+}
+
+.container-formulaire span {
+    color:rgba(48,48,48,1);
+    font-weight:500;
+}
+
+.formulaire-connexion {
+    background: url(/assets/images/fond-connexion.png) rgba(87,186,200,1);
+    background-position-y:100%;
+}
+
+.formulaire-creation {
+    background:#57bac8;
+}

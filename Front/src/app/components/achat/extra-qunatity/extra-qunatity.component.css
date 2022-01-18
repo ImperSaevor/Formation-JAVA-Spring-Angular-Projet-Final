@@ -1,0 +1,31 @@
+.extra-resa input {
+    color:#57bac8;
+    border:0.1rem solid #57bac8;
+    border-radius:1rem;
+    background:#fff;
+}
+
+.btn-operation {
+    background:#57bac8 !important;
+    color:#fff !important;
+    padding: 0rem 0.4rem;
+    font-weight: 500;
+}
+
+.quantite {
+    margin:0 0.5rem;
+}
+
+.extra-resa table {
+    min-width:430px;
+}
+
+.extra-resa table td {
+    border: 0.1rem solid rgba(48,48,48,0.3);
+    padding:0.5rem;
+}
+
+.extra-resa .td-head {
+    background:#57bac8;
+    color:#fff;
+}

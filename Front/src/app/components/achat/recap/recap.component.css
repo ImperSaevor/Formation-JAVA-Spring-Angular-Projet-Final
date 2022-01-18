@@ -1,0 +1,26 @@
+.recap-body h3 {
+    font-size:1.1rem;
+    text-transform:uppercase;
+    font-weight:500;
+    text-align:center;
+}
+
+.recap-body table {
+    width:100%;
+    margin-top:1rem;
+    margin-bottom:2rem;
+}
+
+.recap-body table td {
+    border: 0.1rem solid rgba(48,48,48,0.3);
+    padding:0.5rem;
+}
+
+.recap-body .td-head {
+    background:#57bac8;
+    color:#fff;
+}
+
+.recap-body .td-total {
+    background:rgba(87,186,200,0.3);
+}

@@ -1,0 +1,33 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 col-sm-12 col-12 votre-commande">
+      <h2>Votre commande</h2>
+    </div>
+  </div>
+</div>
+<div class="container container-commande">
+  <div class="row">
+    <div class="col-md-6 col-sm-12 col-12">
+      <h3>COORDONNÉES</h3>
+
+      <div id="coordonnees">
+        <label>Numero de carte</label>
+        <input type="text" placeholder="xxxx-xxxx-xxxx-xxxx" [(ngModel)]="numeroCarte">
+
+        <br />
+        <label>Date d'expiration</label>
+        <input type="text" placeholder="25/2022" [(ngModel)]="dateCarte">
+
+        <br />
+        <label>Cryptogramme</label>
+        <input type="text" placeholder="xxx" [(ngModel)]="cryptoCarte">
+      </div>
+    </div>
+    <div class="col-md-6 col-sm-12 col-12">
+      <app-recap [listeExtra]="listeExtra" [prixPlace]="prixPlace" [prixTotal]="prixTotal"></app-recap>
+
+      <input type="button" class="btn-payer" value="Payer" (click)="paye()">
+      {{message}}
+    </div>
+  </div>
+</div>

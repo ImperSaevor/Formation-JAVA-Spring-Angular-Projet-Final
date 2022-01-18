@@ -1,0 +1,38 @@
+<div class="container container-nos-cinemas">
+  <div class="row">
+    <div class="col-md-12 col-sm-12 col-12">
+      <h2>Les films de votre cinéma</h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col" *ngFor="let x of films">
+        <div
+          class="card h-100"
+          (mouseenter)="mouseEnter()"
+          (mouseleave)="mouseLeave()"
+        >
+          <img
+            src="{{ x.image }}"
+            class="card-img-top"
+            (click)="goDescFilm(x.id)"
+          />
+          <input
+            class="btn btn-dark m-2"
+            *ngIf="isEnter && isConnect"
+            type="button"
+            value="Voir Seances"
+            (click)="goSeance(x.id)"
+          />
+          <div class="card-body">
+            <h5 class="card-title">{{ x.nom }}</h5>
+            <p class="card-text">{{ x.synopsis }}</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Date de sortie : {{ x.date }}</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

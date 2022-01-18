@@ -1,0 +1,15 @@
+.container-theatre {
+    padding:2rem;
+}
+
+.container-theatre h2 {
+    color:#57bac8;
+    font-size:2rem;
+    text-transform:uppercase;
+    margin-bottom:1.5rem;
+}
+
+.container-theatre h5 {
+    color:#57bac8;
+    margin-bottom:1.5rem;
+}

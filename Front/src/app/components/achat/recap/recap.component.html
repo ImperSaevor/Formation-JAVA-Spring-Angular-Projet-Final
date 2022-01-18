@@ -1,0 +1,25 @@
+<div class="recap-body">
+  <h3>Récapitulatif</h3>
+  
+  <table>
+    <tr>
+      <td class="td-head">Article</td>
+      <td class="td-head">Quantité</td>
+      <td class="td-head">Prix</td>
+    </tr>
+    <tr>
+      <td>Place plein tarif</td>
+      <td>1</td>
+      <td>{{ prixPlace }} €</td>
+    </tr>
+    <tr *ngFor="let item of listeExtra">
+        <td *ngIf="item.prix > 0">{{ item.nom }}</td>
+        <td *ngIf="item.prix > 0">{{ item.quantity }}</td>
+        <td *ngIf="item.prix > 0">{{ item.prix }}&nbsp;€</td>
+    </tr>
+    <tr>
+      <td class="td-total">TOTAL</td>
+      <td class="td-total" colspan="2">{{setPrixTotal()}}&nbsp;€</td>
+    </tr>
+  </table>
+</div>

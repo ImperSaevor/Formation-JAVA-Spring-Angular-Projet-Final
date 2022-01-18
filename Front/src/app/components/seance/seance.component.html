@@ -1,0 +1,64 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 col-sm-12 col-12 votre-film">
+      <h2>Votre film</h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4 col-sm-12 col-12 resa-seance-img">
+      <img src="{{film.image}}" alt="image film">
+    </div>
+    <div class="col-md-8 col-sm-12 col-12 resa-seance">
+      <h1>{{film.nom}}</h1>
+      <select [(ngModel)]="nomcinema" (change)="print()">
+        <option value="default">Choisir un cinéma</option>
+        <option *ngFor="let x of mesCinemas">
+          {{ x }}
+        </option>
+      </select>
+
+       
+      <!-- <button (click)="print()">Click me</button> -->
+
+      <!-- <app-cinema></app-cinema> -->
+      <table>
+        <tr>
+          <td *ngFor="let y of seances">
+            <div *ngIf="y.prest > 0">
+              <input class="btn-seance"
+                type="button"
+                value="{{ y.horaire }}"
+                (click)="seanceChoose(y)"
+              />
+            </div>
+            <div *ngIf="y.prest < 1">
+              <input
+                type="button"
+                value="{{ y.horaire }}"
+                (click)="seanceChoose(y)"
+                disabled="true"
+              />
+            </div>
+          </td>
+        </tr>
+      </table>
+
+      <div *ngIf="isSeanceSelect" class="isSeanceSelect">
+        <p>Place Plein Tarif</p>
+        <input type="button" value="-" (click)="less()" class="btn-operation" />
+        <input type="text" [value]="quantity" class="quantite"/>
+        <input type="button" value="+" (click)="add()" [disabled]="isDisabled" class="btn-operation" />
+
+        <div *ngIf="quantity > 0" class="recapitulatif">
+          <h6>Recapitulatif de la commande</h6>
+          <hr />
+        
+          <div>Place plein tarif&nbsp;: <span>{{ prixTotal }}&nbsp;€</span></div>
+          <div>
+            <input type="button" value="Suivant" (click)="next()" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

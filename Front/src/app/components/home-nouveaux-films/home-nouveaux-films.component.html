@@ -1,0 +1,56 @@
+<!-- <app-card-film *ngFor="let x of listeFilms"></app-card-film> -->
+<br />
+
+<div class="container a-decouvrir">
+  <div class="row">
+    <div class="col-md-12 col-sm-12 col-12">
+      <h2>À découvrir dans nos cinémas</h2>
+    </div>
+  </div>
+  <div class="btn-group">
+    <button
+      type="button"
+      (click)="filmsALAffiche()"
+      class="btn btn-bleu-arr-gauche"
+    >
+      A l'affiche
+    </button>
+    <button
+      type="button"
+      (click)="afficherNouveautes()"
+      class="btn btn-bleu-rectangle"
+    >
+      Nouveautés
+    </button>
+    <button
+      type="button"
+      (click)="afficherNextSorties()"
+      class="btn btn-bleu-arr-droite"
+    >
+      Prochainement
+    </button>
+  </div>
+  <br /><br />
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col" *ngFor="let x of listeFilms">
+      <div class="card h-100 carte-film">
+        <img
+          src="{{ x.image }}"
+          class="card-img-top"
+          (click)="goDescFilm(x.id)"
+        />
+        <div class="card-body">
+          <h5 class="card-title">{{ x.nom }}</h5>
+          <p class="card-text">{{ x.synopsis }}</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Date de sortie : {{ x.date }}</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <app-technos></app-technos>
+</div>

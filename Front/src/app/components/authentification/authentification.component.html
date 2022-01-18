@@ -1,0 +1,43 @@
+<div class="container login-client">
+  <div class="row">
+    <div class="col-md-6 col-sm-12 col-12 container-formulaire formulaire-creation">
+      <h2>CRÉATION DE COMPTE</h2>
+      <p><span>Vous n'avez pas de compte&nbsp;?</span><br />
+        N'hésitez pas à le créer et ainsi profiter encore plus de nos cinémas, à travers nos offres, nos cartes, nos services et pleins de surprises !
+      </p>
+      <br />
+      <input type="text" [(ngModel)]="client.nom" placeholder="nom" [ngClass]="classNom">
+      <br>
+      <input type="text" [(ngModel)]="client.prenom" placeholder="prenom" [ngClass]="classPrenom">
+      <br>
+      <input type="date" [(ngModel)]="client.date" placeholder="date" [ngClass]="classDate">
+      <br>
+      <input type="mail" [(ngModel)]="client.mail" placeholder="mail" (input)="verifyMail()" [ngClass]="classMail">
+      <br>
+      <input type="password" [(ngModel)]="client.password" placeholder="Mot de passe" [ngClass]="classPass">
+      <br>
+      <input type="text" [(ngModel)]="client.cp" placeholder="Code postal" [ngClass]="classCp">
+      <br>
+      <input id="btn-enregistrer" type="button" value="S'inscrire" (click)="register()" [disabled]="isDiseable" class="btn btn-dark">
+    </div>
+    <div class="col-md-6 col-sm-12 col-12 container-formulaire formulaire-connexion">
+      <h2>CONNEXION</h2>
+      <input type="mail" [(ngModel)]="mail" placeholder="mail" [ngClass]="classMailLogin">
+      <br>
+      <input type="password" [(ngModel)]="password" placeholder="Mot de passe" [ngClass]="classPassLogin">
+      <br>
+      <input id="btn-connection" type="button" value="Se connecter" (click)="login()" class="btn btn-dark">
+      <br>
+      <h4 class="text-danger bg-light">{{messageLogin}}</h4>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12 sm-12 col-12">
+      <br />
+      <div>{{message}}</div>
+    </div>
+  </div>
+</div>
+
+
+

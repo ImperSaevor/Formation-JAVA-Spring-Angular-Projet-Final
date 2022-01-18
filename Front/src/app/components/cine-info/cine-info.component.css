@@ -1,0 +1,16 @@
+.carte-film:hover, .card-img-top:hover {
+  cursor:pointer;
+  background:rgba(87,186,200,0.3);
+  opacity:0.9;
+}
+
+.container-nos-cinemas {
+  padding:2rem;
+}
+
+.container-nos-cinemas h2 {
+    color:#57bac8;
+    font-size:2rem;
+    text-transform:uppercase;
+    margin-bottom:1.5rem;
+}

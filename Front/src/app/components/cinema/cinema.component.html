@@ -1,0 +1,78 @@
+<div class="container container-nos-cinemas">
+  <div class="row">
+    <div class="col-md-12 col-sm-12 col-12">
+      <h2>Nos cinémas</h2>
+    </div>
+  </div>
+
+  <!-- <div class="container">
+    <select [(ngModel)]="nomcinema">
+      <option value="default">Choisir un cinÃ©ma</option>
+      <option *ngFor="let x of mesCinemas">
+        {{ x }}
+      </option>
+    </select>
+    <button (click)="print()">Choisir</button> -->
+
+  <div class="row">
+    <div class="row row-cols-1 row-cols-md-3 g-4 nos-cinemas">
+      <div class="col" *ngFor="let x of mesCinemas">
+        <div class="card h-100 carte-film" (click)="seance(x)">
+          <div>
+            <img
+              src="{{ x.image }}"
+              class="card-img-top"
+              (click)="goDescFilm(x)"
+            />
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">{{ x.nom }}</h5>
+          </div>
+          <div class="card-footer"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12 col-sm-12 col-12 container-map">
+      <h2>Nous géolocaliser</h2>
+      <div class="mapouter">
+        <div class="gmap_canvas">
+          <iframe
+            width="100%"
+            height="500"
+            id="gmap_canvas"
+            style="margin-top: 1rem"
+            src="https://maps.google.com/maps?q=Alten%20House%20126%20Av.%20du%20G%C3%A9n%C3%A9ral%20Leclerc,%2092100%20Boulogne-Billancourt&t=&z=13&ie=UTF8&iwloc=&output=embed"
+            frameborder="0"
+            scrolling="no"
+            marginheight="0"
+            marginwidth="0"
+          >
+          </iframe>
+          <a href="https://123movies-to.org"></a><br />
+          <style>
+            .mapouter {
+              position: relative;
+              text-align: right;
+              height: 500px;
+              width: 100%;
+            }
+          </style>
+          <a href="https://www.embedgooglemap.net">add google maps html</a>
+          <style>
+            .gmap_canvas {
+              overflow: hidden;
+              background: none !important;
+              height: 500px;
+              width: 100%;
+            }
+          </style>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- </div> -->
+</div>

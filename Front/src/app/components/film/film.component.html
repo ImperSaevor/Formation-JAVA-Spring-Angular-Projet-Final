@@ -1,0 +1,81 @@
+<div class="container container-film-choisi">
+  <div class="row">
+    <div class="col-md-12 col-sm-12 col-12 votre-film">
+      <h2>Votre film</h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12 col-sm-12 col-12 container-tab-film">
+      <table class="tableau-film">
+        <tr>
+          <td class="td-image-film">
+            <div><img src="{{ monfilm.image }}" /></div>
+          </td>
+          <td>
+            <div class="col-md-12 col-sm-12 col-12 td-infos-film">
+              <h1>{{ monfilm.nom }}</h1>
+              <h4>{{ monfilm.genre }}</h4>
+              <h6>{{ monfilm.duree }} minutes</h6>
+
+              <div class="row">
+                <div class="col-md-6 col-sm-12 col-12 container-descriptif">
+                  <p class="descriptif-film">Synopsis</p>
+                  <hr />
+                  <p>{{ monfilm.synopsis }}</p>
+
+                  <div class="container-fluid">
+                    <button
+                      *ngIf="isConnected"
+                      class="btn btn-outline-success btn-seance"
+                      (click)="seance()"
+                    >
+                      Voir les séances
+                    </button>
+                    <div *ngIf="!isConnected" class="isConnected">
+                      <p>Il faut vous connecter pour choisir une seance</p>
+                      <button class="btn btn-outline-success btn-seance" disabled>
+                        Voir les séances
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-sm-12 col-12 container-descriptif">
+                  <p class="descriptif-film">Bande annonce</p>
+                  <hr />
+                  <iframe
+                    width="350"
+                    height="250"
+                    [src]="safeUrl"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+          </td>
+        </tr>
+      </table>
+    
+      <!-- <div class="container">
+        <div><input id="btn-connection" type="button" value="Séances" (click)="seance()" class="btn btn-dark"></div>
+    <br> -->
+    
+      <!-- <div><img src="{{monfilm.image}}"><p>Genre: {{monfilm.genre}}</p>
+        <p>Synopsis: {{monfilm.synopsis}}</p></div> -->
+    
+      
+    
+      <!-- <div class="video-responsive"><iframe width="560" height="315" src="{{monfilm.video}}" title="YouTube video player" allowfullscreen></iframe> -->
+      <!-- </div> -->
+    
+      <!-- {{vid}} -->
+    
+      <!-- <div><p>{{monfilm.genre}}</p></div><div><p>{{monfilm.synopsis}}</p></div> -->
+    
+      <!-- </div> -->
+    </div>
+  </div>
+ 
+</div>

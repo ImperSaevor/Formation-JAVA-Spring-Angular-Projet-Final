@@ -1,0 +1,64 @@
+.header-moncompte {
+    text-align:center;
+    margin-top:2rem;
+}
+
+.header-moncompte h1 {
+    color:#57bac8;
+    font-size:2.2rem;
+}
+
+.header-moncompte p {
+    font-style:italic;
+}
+
+.infos-persos {
+    padding:2rem;
+    margin-top:2rem;
+    background:#58bac7;
+    color:#fff
+}
+
+.infos-persos h2, .infos-persos-2 h2 {
+    font-size:1.6rem;
+    margin-bottom:2.5rem;
+}
+
+.infos-persos label {
+    text-transform:uppercase;
+    color:#303030;
+    font-weight:500;
+    font-size:0.8rem;
+}
+
+.infos-persos hr {
+    border-bottom:0.1rem solid #fff;
+    margin-top:0.2rem;
+}
+
+.infos-persos .donnees-client {
+    margin-bottom:1rem;
+    color:#fff;
+}
+
+.infos-persos-2 {
+    padding:2rem;
+    margin-top:2rem;
+}
+
+.infos-persos-2 label {
+    text-transform:uppercase;
+    color:#57bac8;
+    font-weight:500;
+    font-size:0.8rem;
+}
+
+.infos-persos-2 hr {
+    border-bottom:0.1rem solid #57bac8;
+    margin-top:0.2rem;
+}
+
+.infos-persos-2 .donnees-client {
+    margin-bottom:1rem;
+    color:#303030;
+}

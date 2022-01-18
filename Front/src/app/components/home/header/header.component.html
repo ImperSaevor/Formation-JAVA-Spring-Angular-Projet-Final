@@ -1,0 +1,73 @@
+
+    <div class="container header-body">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-12">
+                <a routerLink="nouveautes"><img class="logo" src="../../assets/images/logo-alten-cinema-blanc.png" alt="Alten Cinemas"></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-sm-6 col-12">
+                <nav id="menu" class="navbar navbar-expand-lg navbar-light">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <!--
+                            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#myNavbar">
+                                <ion-icon name="reorder-three-outline"></ion-icon>
+                            </button>
+                            -->
+                        </div>
+                        <div id="myNavbar" class="collapse navbar-collapse">
+                            <ul class="nav navbar-nav menu-principal">
+                                <li><a routerLink="nouveautes">Accueil</a></li>
+                                <li><a routerLink="cinema">Nos cinémas</a></li>
+                                <li><a routerLink="actu">Actualités</a></li>
+                                <li><a routerLink="theatre">Théâtre</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="col-md-6 col-sm-6 col-12">
+                <select id="choixlangues" name="choixlangues">
+                    <option value="french">Français</option>
+                    <option value="english">English</option>
+                    <option value="spanish">Español</option>
+                    <option value="deutsch">Deutsch</option>
+                </select>
+                <div *ngIf="isConnect">
+                  <app-compte id="compte"></app-compte>
+                </div>
+                <div *ngIf="!isConnect">
+                  <app-compte id="compte"></app-compte>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="recherche">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-12 div-recherche">
+                    <nav class="navbar navbar-light">
+                        <div class="container-fluid">
+                          <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Rechercher" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Rechercher</button>
+                          </form>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pub">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-12 div-pub">
+                    <h2>ALTEN PASS</h2>
+                    <p><strong>Dites oui au cinéma plus accessible.</strong></p>
+                    <p>Accédez à nos cinémas et à toujours plus de séances, avec nos offres !</p>
+                    <button id="btn-abonnement" href="">M'abonner</button><button id="btn-decouvrir" href="">Découvrir les offres</button>
+                </div>
+            </div>
+        </div>
+    </div>

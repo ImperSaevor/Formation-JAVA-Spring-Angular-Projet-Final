@@ -1,0 +1,52 @@
+.votre-commande {
+    background:#57bac8;
+    color:#fff;
+    text-align:center;
+    padding:1rem;
+    margin-top:2rem;
+}
+
+.container-commande {
+    background:url(/assets/images/fond-cine-bleu.png) rgba(87,186,200,0.3);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 70%;
+    padding:2rem;
+}
+
+.container-commande h2 {
+    color:#57bac8;
+    font-size:1.2rem;
+}
+
+.listeingredients {
+    margin-top:2rem;
+}
+
+.container-recapitulatif {
+    padding-top:1rem;
+}
+
+.recapitulatif {
+    background: #fff;
+    border: 0.1rem solid #57bac8;
+    width: max-content;
+    padding: 1rem;
+    border-radius: 1rem;
+    display:block;
+    margin:auto;
+}
+
+.btn-validation {
+    display:block;
+    margin:auto;
+    background:#57bac8;
+    color:#fff;
+    border-radius:1rem;
+    padding:0.5rem;
+    border:none;
+}
+
+.btn-validation:hover {
+    background:rgba(87,186,200,0.6);
+}

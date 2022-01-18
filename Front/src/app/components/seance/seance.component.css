@@ -1,0 +1,103 @@
+.votre-film {
+    background:#57bac8;
+    color:#fff;
+    text-align:center;
+    padding:1rem;
+    margin-top:2rem;
+}
+
+.resa-seance-img {
+    padding:1rem;
+    background:rgba(87,186,200,0.3);
+}
+
+.resa-seance {
+    padding:1rem;
+    background:url(/assets/images/fond-cine-bleu.png) rgba(87,186,200,0.3);
+    background-size:100%;
+}
+
+.resa-seance h1 {
+    color:#57bac8;
+}
+
+.resa-seance select {
+    margin-top:2rem;
+    margin-bottom:1rem;
+    background:#57bac8;
+    color:#fff;
+    border-radius:1rem;
+    padding:0.5rem;
+    border:none;
+}
+
+.resa-seance input {
+    color:#57bac8;
+    border:0.1rem solid #57bac8;
+    border-radius:1rem;
+    background:#fff;
+}
+
+.resa-seance input[type="button" i]:disabled {
+    background:rgba(48,48,48,0.1)
+}
+
+.resa-seance .btn-seance:hover {
+    background:rgba(87,186,200,0.2);
+    color:#fff;
+}
+
+.isSeanceSelect {
+    margin-top:2rem;
+}
+
+.btn-operation {
+    background:#57bac8 !important;
+    color:#fff !important;
+    padding: 0rem 0.4rem;
+    font-weight: 500;
+}
+
+.quantite {
+    margin:0 0.5rem;
+}
+
+.isSeanceSelect p {
+    float:left;
+    margin-right:2rem;
+}
+
+.recapitulatif {
+    background: #fff;
+    border: 0.1rem solid #57bac8;
+    width: max-content;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 1rem;
+}
+
+.recapitulatif h6 {
+    color:#57bac8;
+
+}
+
+.recapitulatif input {
+    margin-top:1rem;
+    display: block;
+    margin: 1rem auto;
+    padding:0.5rem;
+}
+
+.recapitulatif input:hover {
+    background:#57bac8;
+    color:#fff;
+    cursor:pointer;
+}
+
+.recapitulatif span {
+    background:#57bac8;
+    color:#fff;
+    padding:0.5rem;
+    border-radius:1rem;
+    margin-left:2rem;
+}

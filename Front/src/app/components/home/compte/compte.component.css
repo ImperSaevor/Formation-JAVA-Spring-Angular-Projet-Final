@@ -1,0 +1,53 @@
+
+.moncompte {
+    background: #57bac8;
+    padding: 0.5rem 1.5rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    min-height: 3rem;
+}
+
+.moncompte img {
+    width:2rem;
+    display: inline-block;
+    position: relative;
+    top: 0rem;
+    right: -0.5rem;
+}
+
+.moncompte #open-modal {
+    line-height:2.5rem;
+    background:none;
+    border:none;
+    color:#fff;
+    text-transform:uppercase;
+}
+
+.moncompte:hover {
+    background:rgba(87,186,200,0.5);
+}
+
+.moncompte .modal-content {
+    background:#57bac8;
+}
+
+.moncompte .modal-footer .btn-close-modal {
+    background:rgba(48,48,48,0.8);
+    color:#fff;
+}
+
+.moncompte .modal-footer .btn-close-modal:hover {
+    background:rgba(48,48,48,0.5);
+}
+
+.moncompte p  {
+    text-transform:initial;
+}
+
+.moncompte .txt-gris {
+    color:rgba(48,48,48,0.8);
+}
+
+.test{
+  background-color: black;
+}

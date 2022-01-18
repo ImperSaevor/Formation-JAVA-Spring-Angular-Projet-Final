@@ -1,0 +1,23 @@
+.commande-validee {
+    background:url(/assets/images/confirmation.png);
+    padding:7rem 2rem 2rem 2rem;
+    background-size:100%;
+    background-repeat: no-repeat;
+    background-position-y:58%;
+    margin-top:2rem;
+    min-height:20rem;
+}
+
+.commande-validee p {
+    text-align:center;
+    color:#000;
+    text-shadow:1px 2px 4px rgba(48,48,48,0.3);
+    font-size:1.1rem;
+    display:block;
+    margin:auto;
+}
+
+.valide {
+    color:#08a108 !important;
+    font-size:1.3rem !important;
+}

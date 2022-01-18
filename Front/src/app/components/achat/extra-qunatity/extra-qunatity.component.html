@@ -1,0 +1,18 @@
+<div class="extra-resa">
+    <table>
+        <tr>
+            <td class="td-head">Article</td>
+            <td class="td-head">Quantité</td>
+            <td class="td-head">Prix</td>
+        </tr>
+        <tr>
+            <td>{{ nom }}</td>
+            <td>
+                <input type="button" class="btn-operation" value="-" (click)="less()" />
+                <input type="text" class="quantite" [(ngModel)]="quantity" />
+                <input type="button" class="btn-operation" value="+" (click)="add()" />
+            </td>
+            <td>{{ prix }}€</td>
+        </tr>
+    </table>
+</div>
